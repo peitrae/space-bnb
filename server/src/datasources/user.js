@@ -15,7 +15,7 @@ class UserAPI extends DataSource {
    */
   initialize(config) {
     this.context = config.context;
-  }
+  } // Access out graph API's context
 
   /**
    * User can be called with an argument that includes email, but it doesn't
