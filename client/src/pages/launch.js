@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { useQuery } from "apollo/react-hooks";
+import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
 
 import { Loading, Header, LaunchDetail } from "../components";
