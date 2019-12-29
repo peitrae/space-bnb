@@ -4,7 +4,7 @@ import gql from "graphql-tag";
 
 import { LaunchTile, Header, Button, Loading } from "../components";
 
-export const LAUNCH_TITLE_DATA = gql`
+export const LAUNCH_TILE_DATA = gql`
   fragment LaunchTile on Launch {
     id
     isBooked
@@ -29,7 +29,7 @@ const GET_LAUNCHES = gql`
       }
     }
   }
-  ${LAUNCH_TITLE_DATA}
+  ${LAUNCH_TILE_DATA}
 `;
 
 export default function Launches() {
