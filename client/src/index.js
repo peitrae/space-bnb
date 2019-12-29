@@ -8,7 +8,10 @@ import Pages from './pages'
 
 const cache = new InMemoryCache();
 const link = new HttpLink({
-  uri: "http://localhost:4000"
+  uri: "http://localhost:4000/graphql",
+  headers: {
+    authorization: localStorage.getItem('token')
+  }
 });
 
 const client = new ApolloClient({
